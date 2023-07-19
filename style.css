@@ -1,3 +1,175 @@
+
+.Nasa-image{
+    width: 82px;
+    height: 80px;
+    position: fixed;
+    margin: 50px;
+    z-index: 2;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.input{
+    display: none;
+}
+
+.black{
+    position: absolute;
+    width: 110vw;
+    height: 110vh;
+    background-color: #1a0031;
+    top: 0;
+    left: 0;  
+    opacity: 0;
+    transform: translateY(-1500px);
+    transition: 0.5s;
+    
+}
+
+.black-text{
+    padding: 350px 40px 0px 40px  ;
+font-size: 20px;
+font-family: 'Comfortaa', cursive;
+color: #ebebeb;
+
+}
+
+.input[type="checkbox"]:checked ~ .black{
+    opacity: 1;
+    z-index: 1;
+    transform: translate(0px);
+
+}
+input{
+    display: none;
+}
+
+
+.boost img{
+    margin: 150px 62px;
+}
+.input-star[type="checkbox"]:checked ~ .star:nth-child(1){
+    animation: star_1 0.9s linear infinite ; 
+    
+
+}
+.input-star[type="checkbox"]:checked ~ .star:nth-child(2){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 1s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(3){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 2s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(4){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 3s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(5){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 1s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(6){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 2s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(7){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 3s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(8){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 4s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(9){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 5s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(10){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 1s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(11){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 2s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(12){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 3s;
+
+}
+.input-star[type="checkbox"]:checked ~ .star:nth-child(13){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 5s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(14){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 1s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(15){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 2s;
+
+}
+.input-star[type="checkbox"]:checked ~ .star:nth-child(16){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 3s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(17){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 3s;
+
+}
+
+.input-star[type="checkbox"]:checked ~ .star:nth-child(18){
+    animation: star_1 0.9s linear infinite ; 
+    animation-delay: 2s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     background-color: #000000;
     overflow: hidden;
@@ -10,6 +182,7 @@ body{
     display: flex;
     margin: 10px auto;
     justify-content: center;
+    z-index: 4;
 }
 .wing-left {
     width: 0px;
@@ -69,7 +242,7 @@ body{
         transform: translateY(800px);
     }
 }
-@keyframes star_2{
+@keyframes star_1{
     0%{
         transform: translateY(0px);
     }
